@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padukuhan Brongkol — Mandiri, Guyub, Lestari</title>
+<meta name="description" content="Situs profil resmi Padukuhan Brongkol, Kalurahan Giripurwo, Kapanewon Purwosari, Kabupaten Gunungkidul, D.I. Yogyakarta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://picsum.photos/seed/brongkol-sawah/1800/1100" fetchpriority="high">
+<link rel="stylesheet" href="brongkol.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- ============ AUDIO OTOMATIS ============ -->
+<audio autoplay loop>
+  <source src="audio/soundKarawitan.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-logo">
+        <img src="img/GunungKidul.png" alt="Lambang Kabupaten Gunungkidul" class="brand-logo-img">
+      </span>
+      <span class="brand-name">Padukuhan<strong> Brongkol</strong></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#sejarah" class="nav-link" data-nav>Sejarah</a></li>
+        <li><a href="#visi-misi" class="nav-link" data-nav>Visi Misi</a></li>
+        <li><a href="#struktur" class="nav-link" data-nav>Struktur</a></li>
+        <li><a href="#kelembagaan" class="nav-link" data-nav>Kelembagaan</a></li>
+        <li><a href="#pamong" class="nav-link" data-nav>Pamong</a></li>
+        <li><a href="#demografi" class="nav-link" data-nav>Demografi</a></li>
+        <li><a href="#potensi" class="nav-link" data-nav>Potensi</a></li>
+        <li><a href="#fasilitas" class="nav-link" data-nav>Fasilitas</a></li>
+        <li><a href="#seni-budaya" class="nav-link" data-nav>Seni &amp; Budaya</a></li>
+        <li><a href="#batas-geografis" class="nav-link" data-nav>Batas Wilayah</a></li>
+        <li><a href="#hubungi-kami" class="nav-link" data-nav>Hubungi Kami</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile nav overlay -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#home" data-nav-mobile>Home</a></li>
+    <li><a href="#sejarah" data-nav-mobile>Sejarah</a></li>
+    <li><a href="#visi-misi" data-nav-mobile>Visi Misi</a></li>
+    <li><a href="#struktur" data-nav-mobile>Struktur</a></li>
+    <li><a href="#kelembagaan" data-nav-mobile>Kelembagaan</a></li>
+    <li><a href="#pamong" data-nav-mobile>Pamong</a></li>
+    <li><a href="#demografi" data-nav-mobile>Demografi</a></li>
+    <li><a href="#potensi" data-nav-mobile>Potensi</a></li>
+    <li><a href="#fasilitas" data-nav-mobile>Fasilitas</a></li>
+    <li><a href="#seni-budaya" data-nav-mobile>Seni &amp; Budaya</a></li>
+    <li><a href="#batas-geografis" data-nav-mobile>Batas Wilayah</a></li>
+    <li><a href="#hubungi-kami" data-nav-mobile>Hubungi Kami</a></li>
+  </ul>
+</div>
+
+<!-- ============ HERO / HOME (AUTO SLIDE) ============ -->
+<section class="hero" id="home">
+  <div class="hero-slider">
+    <div class="hero-slide active">
+      <img src="img/pemandangan.jpeg" alt="Pemandangan sawah dan perbukitan Brongkol">
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="badge-location">Kabupaten Gunungkidul, D.I. Yogyakarta</span>
+    <h1 class="hero-title">
+      Padukuhan
+      <span class="hero-title-accent">Brongkol</span>
+    </h1>
+    <p class="hero-subtitle">Kalurahan Purwodadi, Kapanewon Tepus, Kabupaten Gunungkidul, Daerah Istimewa Yogyakarta</p>
+    <p class="hero-tagline">&ldquo;Guyub Rukun, Brongkol Maju Sejahtera&rdquo;</p>
+    <a href="#sejarah" class="btn btn-cta">
+      Kenali Dusun Kami
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M12 4v15m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+
+  <div class="scroll-hint">
+    <span>GULIR KE BAWAH</span>
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M12 4v15m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</section>
+
+<div class="weave-divider" aria-hidden="true"></div>
+
+<!-- ============ SEJARAH ============ -->
+<section class="section section-cream" id="sejarah">
+  <div class="container">
+    <div class="section-eyebrow">✦ SEJARAH</div>
+    <h2 class="section-title">Kisah Panjang Dusun Brongkol</h2>
+
+    <div class="sejarah-grid">
+      <div class="sejarah-text">
+        <p>Nama "Brongkol" berasal dari kata "terjal" yang mencerminkan kondisi geografis daerah tersebut yang berbukit-bukit dan penuh tantangan. Dikenal sebagai salah satu dusun di wilayah Wareng sebelum akhirnya berkembang menjadi Padukuhan Brongkol yang makmur.</p>
+        <p>Tokoh sentral dari sejarah Dusun Brongkol adalah <strong>Mbah Jogo</strong>, seorang pelopor yang dengan penuh keberanian membuka lahan di daerah terjal dan sulit diakses. Kerja keras Mbah Jogo berhasil mengubah rawa-rawa yang tidak ramah menjadi pemukiman yang makmur dan subur. Semangat kemandirian dan keberanian yang diwariskan oleh Mbah Jogo menjadi fondasi kuat bagi warga Brongkol hingga saat ini.</p>
+        <p>Brongkol juga memiliki kaitan erat dengan sejarah Keraton Yogyakarta. Sri Sultan Hamengkubuwono I, yang dikenal sebagai Ngorso Dalem, pernah singgah di Pedukuhan Gerotan (daerah dekat Brongkol) sebelum memulai perjalanan pengembangan wilayahnya. Kehadiran Sultan menambah dimensi penting dalam sejarah, mengaitkan dusun ini dengan jejak sejarah kerajaan yang besar.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-year">Mbah Jogo</span>
+          <span class="timeline-desc">Membuka lahan dan menjadi pelopor pemukiman di wilayah terjal yang kelak menjadi Brongkol.</span>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">Era Keraton</span>
+          <span class="timeline-desc">Sri Sultan Hamengkubuwono I (Ngorso Dalem) singgah dan menandai wilayah ini sebagai bagian dari cagar budaya.</span>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">Kemandirian</span>
+          <span class="timeline-desc">Semangat gotong royong dan kebertahanan warga terus terpelihara hingga era modern.</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISI & MISI ============ -->
+<section class="section section-pastel" id="visi-misi">
+  <div class="container">
+    <div class="vm-grid">
+      
+      <div class="visi-col">
+        <div class="section-eyebrow">✦ VISI</div>
+        <h3 class="vm-heading">Visi Padukuhan</h3>
+        <div class="visi-box">
+          <p>&ldquo;Terwujudnya Padukuhan yang Maju, Sejahtera, Religius, dan Berbudaya Berlandaskan Gotong Royong.&rdquo;</p>
+        </div>
+      </div>
+
+      <div class="misi-col">
+        <div class="section-eyebrow">✦ MISI</div>
+        <h3 class="vm-heading">Langkah Nyata Kami</h3>
+        <ol class="misi-list">
+          <li>
+            <span class="misi-bullet">1</span>
+            <span class="misi-text">Melayani masyarakat dengan cepat, ramah, dan transparan.</span>
+          </li>
+          <li>
+            <span class="misi-bullet">2</span>
+            <span class="misi-text">Menjaga lingkungan agar tetap bersih, indah, dan aman.</span>
+          </li>
+          <li>
+            <span class="misi-bullet">3</span>
+            <span class="misi-text">Menguatkan kerukunan, budaya, dan semangat gotong royong.</span>
+          </li>
+          <li>
+            <span class="misi-bullet">4</span>
+            <span class="misi-text">Mendorong usaha perekonomian warga agar Padukuhan Brongkol semakin maju dan sejahtera.</span>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ STRUKTUR ============ -->
+<section class="section section-cream" id="struktur">
+  <div class="container">
+    <div class="section-eyebrow center">✦ STRUKTUR</div>
+    <h2 class="section-title center">Struktur Pengurus Padukuhan Brongkol</h2>
+    <p class="section-subtitle center">Susunan pengurus Padukuhan Brongkol berdasarkan data profil terkini</p>
+
+    <div class="orgchart">
+      <!-- Level 1: KADUK -->
+      <div class="org-level org-level-top">
+        <div class="org-card org-card-lead">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Jaka Supriyana"></span>
+          <span class="org-role">Kepala Dukuh</span>
+          <span class="org-name">Jaka Supriyana</span>
+        </div>
+      </div>
+
+      <div class="org-connector" aria-hidden="true"></div>
+
+      <!-- Level 2 -->
+      <div class="org-level">
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Parlam"></span>
+          <span class="org-role">Sekretaris 1</span>
+          <span class="org-name">Parlam</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Parnoto"></span>
+          <span class="org-role">Sekretaris 2</span>
+          <span class="org-name">Parnoto</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Endro Cahyono"></span>
+          <span class="org-role">Ketua RW</span>
+          <span class="org-name">Endro Cahyono</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Wastodiriyo"></span>
+          <span class="org-role">Bendahara 1</span>
+          <span class="org-name">Wastodiriyo</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Kismo Giyono"></span>
+          <span class="org-role">Bendahara 2</span>
+          <span class="org-name">Kismo Giyono</span>
+        </div>
+      </div>
+
+      <div class="org-connector" aria-hidden="true"></div>
+
+      <!-- Level 3 -->
+      <div class="org-level">
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Wastodiriyo"></span>
+          <span class="org-role">Ketua RT 1</span>
+          <span class="org-name">Wastodiriyo</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Parlam"></span>
+          <span class="org-role">Ketua RT 2</span>
+          <span class="org-name">Parlam</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Ngatimin"></span>
+          <span class="org-role">Ketua RT 3</span>
+          <span class="org-name">Ngatimin</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Parnoto"></span>
+          <span class="org-role">Ketua RT 4</span>
+          <span class="org-name">Parnoto</span>
+        </div>
+      </div>
+
+      <div class="org-connector" aria-hidden="true"></div>
+
+      <!-- Level 4 -->
+      <div class="org-level">
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Heri Saputro"></span>
+          <span class="org-role">Karang Taruna</span>
+          <span class="org-name">Heri Saputro</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Pujo Sasmito"></span>
+          <span class="org-role">ROHIS</span>
+          <span class="org-name">Pujo Sasmito</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Sati"></span>
+          <span class="org-role">PKK</span>
+          <span class="org-name">Sati</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Kismo Giyono"></span>
+          <span class="org-role">LPMP</span>
+          <span class="org-name">Kismo Giyono</span>
+        </div>
+        <div class="org-card">
+          <span class="org-photo"><img src="img/user-placeholder.jpg" alt="Foto Suparjo"></span>
+          <span class="org-role">Kelompok Tani</span>
+          <span class="org-name">Suparjo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KELEMBAGAAN ============ -->
+<section class="section section-pastel" id="kelembagaan">
+  <div class="container">
+    <div class="section-eyebrow center">✦ KELEMBAGAAN</div>
+    <h2 class="section-title center">Pemerintahan &amp; Kelembagaan</h2>
+    <p class="section-subtitle center">Struktur pemerintahan dan organisasi kemasyarakatan di Padukuhan Brongkol</p>
+
+    <div class="lembaga-grid">
+      <!-- Kolom Pemerintahan -->
+      <div class="lembaga-col">
+        <h3>A. Pemerintahan</h3>
+        <div class="lembaga-list">
+          <div class="lembaga-item">
+            <span class="lembaga-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h1"/><path d="M14 9h1"/><path d="M9 13h1"/><path d="M14 13h1"/><path d="M9 17h1"/><path d="M14 17h1"/></svg></span>
+            <div>
+              <h4>Kepala Dukuh</h4>
+              <p>Bapak Jaka Supriyana — memimpin pemerintahan dan pelayanan masyarakat.</p>
+            </div>
+          </div>
+          <div class="lembaga-item">
+            <span class="lembaga-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+            <div>
+              <h4>RW &amp; RT</h4>
+              <p>Ketua RW: Endro Cahyono, dengan 4 RT (RT 01–04) yang membawahi warga.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kelembagaan -->
+      <div class="lembaga-col">
+        <h3>B. Kelembagaan</h3>
+        <div class="lembaga-list">
+          <div class="lembaga-item">
+            <span class="lembaga-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <div>
+              <h4>Karang Taruna Pandawa 5</h4>
+              <p>Organisasi kepemudaan, pengembangan generasi muda, dan kegiatan sosial.</p>
+            </div>
+          </div>
+          <div class="lembaga-item">
+            <span class="lembaga-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.3-9.5-9C1 9 2 5.5 5.5 4.5 8 3.8 10 5 12 7c2-2 4-3.2 6.5-2.5C22 5.5 23 9 21.5 12 19 16.7 12 21 12 21Z"/></svg></span>
+            <div>
+              <h4>PKK</h4>
+              <p>Pemberdayaan perempuan, keluarga, posyandu, pengelolaan pangan lokal.</p>
+            </div>
+          </div>
+          <div class="lembaga-item">
+            <span class="lembaga-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V3"/><path d="M21 22V3"/><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg></span>
+            <div>
+              <h4>ROHIS</h4>
+              <p>Rohani Islam — pembinaan keagamaan, peringatan hari besar Islam, dan pengajian.</p>
+            </div>
+          </div>
+          <div class="lembaga-item">
+            <span class="lembaga-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-1.5 10H5.5L4 4Z"/><path d="M8 8a4 4 0 0 0 8 0"/></svg></span>
+            <div>
+              <h4>Kelompok Tani Muji Makmur</h4>
+              <p>Organisasi petani untuk meningkatkan produktivitas pertanian, pemasaran, dan kesejahteraan.</p>
+            </div>
+          </div>
+          <div class="lembaga-item">
+            <span class="lembaga-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16"/><path d="M8 17V9"/><path d="M16 17V9"/><path d="M12 17V5"/><path d="M2 21h20"/></svg></span>
+            <div>
+              <h4>LPMP</h4>
+              <p>Lembaga Pemberdayaan Masyarakat Pedesaan — penguatan ekonomi, pemberdayaan, dan advokasi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAMONG DUSUN ============ -->
+<section class="section section-cream" id="pamong">
+  <div class="container">
+    <div class="section-eyebrow center">✦ PAMONG DUSUN</div>
+    <h2 class="section-title center">Pamong Padukuhan Brongkol</h2>
+    <p class="section-subtitle center">Kepala Dukuh, RW, dan RT beserta lokasi rumah masing-masing</p>
+
+    <div class="pamong-grid">
+      <!-- Kepala Dukuh -->
+      <div class="pamong-card">
+        <div class="pamong-photo"><img src="img/IMG_6179.JPG" alt="Foto Jaka Supriyana"></div>
+        <div class="pamong-body">
+          <div class="pamong-role">Kepala Dukuh</div>
+          <div class="pamong-name">Jaka Supriyana</div>
+          <p class="pamong-desc">Memimpin pemerintahan dan pelayanan masyarakat Padukuhan Brongkol.</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Toko+Issabel+Brongkol" target="_blank" class="pamong-map-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Lokasi Rumah
+          </a>
+        </div>
+      </div>
+
+      <!-- RW 008 -->
+      <div class="pamong-card">
+        <div class="pamong-photo"><img src="img/IMG_4981.JPG" alt="Foto Endro Cahyono"></div>
+        <div class="pamong-body">
+          <div class="pamong-role">Ketua RW 008</div>
+          <div class="pamong-name">Endro Cahyono</div>
+          <p class="pamong-desc">Memimpin wilayah Rukun Warga 008, mengoordinasikan RT dan warga.</p>
+          <a href="https://maps.app.goo.gl/vL7YJ7TjHr8R35re8?g_st=iw" target="_blank" class="pamong-map-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Lokasi Rumah
+          </a>
+        </div>
+      </div>
+
+      <!-- RT 001 -->
+      <div class="pamong-card">
+        <div class="pamong-photo"><img src="img/IMG_6182.JPG" alt="Foto Wastodiriyo"></div>
+        <div class="pamong-body">
+          <div class="pamong-role">Ketua RT 001</div>
+          <div class="pamong-name">Wastodiriyo</div>
+          <p class="pamong-desc">Memimpin Rukun Tetangga 001, mengayomi warga RT setempat.</p>
+          <a href="https://maps.app.goo.gl/rC3XSCkGLb5iLSoA6?g_st=iw" target="_blank" class="pamong-map-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Lokasi Rumah
+          </a>
+        </div>
+      </div>
+
+      <!-- RT 002 -->
+      <div class="pamong-card">
+        <div class="pamong-photo"><img src="img/IMG_6186.JPG" alt="Foto Parlam"></div>
+        <div class="pamong-body">
+          <div class="pamong-role">Ketua RT 002</div>
+          <div class="pamong-name">Parlam</div>
+          <p class="pamong-desc">Memimpin Rukun Tetangga 002, aktif dalam kegiatan warga.</p>
+          <a href="https://maps.app.goo.gl/gicimRGQhJLXQn3f8?g_st=iw" target="_blank" class="pamong-map-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Lokasi Rumah
+          </a>
+        </div>
+      </div>
+
+      <!-- RT 003 -->
+      <div class="pamong-card">
+        <div class="pamong-photo"><img src="img/IMG_1857.JPG.jpeg" alt="Foto Ngatimin"></div>
+        <div class="pamong-body">
+          <div class="pamong-role">Ketua RT 003</div>
+          <div class="pamong-name">Ngatimin</div>
+          <p class="pamong-desc">Memimpin Rukun Tetangga 003, menjaga kerukunan dan gotong royong.</p>
+          <a href="https://maps.app.goo.gl/hS8d9Vhua7U5YJReA?g_st=iw" target="_blank" class="pamong-map-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Lokasi Rumah
+          </a>
+        </div>
+      </div>
+
+      <!-- RT 004 -->
+      <div class="pamong-card">
+        <div class="pamong-photo"><img src="img/IMG_4936.JPG" alt="Foto Parnoto"></div>
+        <div class="pamong-body">
+          <div class="pamong-role">Ketua RT 004</div>
+          <div class="pamong-name">Parnoto</div>
+          <p class="pamong-desc">Memimpin Rukun Tetangga 004, melayani dan mengayomi warga.</p>
+          <a href="https://maps.app.goo.gl/97NNu79yP8pjCDLFA?g_st=iw" target="_blank" class="pamong-map-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Lokasi Rumah
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEMOGRAFI (CHART.JS) ============ -->
+<section class="section section-pastel" id="demografi">
+  <div class="container">
+    <div class="section-eyebrow">✦ DEMOGRAFI</div>
+    <h2 class="section-title">Data Kependudukan</h2>
+    <p class="section-subtitle">Data demografi Padukuhan Brongkol berdasarkan Buku Profil Dusun.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card"><span class="stat-number" data-count="363">0</span><span class="stat-label">Total Penduduk (±)</span></div>
+      <div class="stat-card"><span class="stat-number" data-count="100">0</span><span class="stat-label">Agama Islam (%)</span></div>
+      <div class="stat-card"><span class="stat-number" data-count="78">0</span><span class="stat-label">Tamat SD (%)</span></div>
+      <div class="stat-card"><span class="stat-number" data-count="45">0</span><span class="stat-label">Mayoritas Petani (%)</span></div>
+    </div>
+
+    <div class="chart-grid">
+      <!-- Diagram Agama -->
+      <div class="chart-card">
+        <h3 class="chart-title">Presentase Agama Penduduk</h3>
+        <div class="chart-wrapper">
+          <canvas id="religionChart"></canvas>
+        </div>
+        <div class="chart-legend" id="religionLegend"></div>
+      </div>
+
+      <!-- Diagram Pendidikan -->
+      <div class="chart-card">
+        <h3 class="chart-title">Presentase Status Pendidikan</h3>
+        <div class="chart-wrapper">
+          <canvas id="educationChart"></canvas>
+        </div>
+        <div class="chart-legend" id="educationLegend"></div>
+      </div>
+
+      <!-- Diagram Pekerjaan -->
+      <div class="chart-card">
+        <h3 class="chart-title">Presentase Jenis Pekerjaan</h3>
+        <div class="chart-wrapper">
+          <canvas id="occupationChart"></canvas>
+        </div>
+        <div class="chart-legend" id="occupationLegend"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ POTENSI (DIPERBARUI - UMKM MAPS, TOKO LIVIAN DIHAPUS, LEMPENG DI KEARIFAN LOKAL) ============ -->
+<section class="section section-cream" id="potensi">
+  <div class="container">
+    <div class="section-eyebrow center">✦ POTENSI DUSUN</div>
+    <h2 class="section-title center">Kekayaan yang Kami Kembangkan</h2>
+
+    <!-- Sub-bagian A: UMKM -->
+    <div class="potensi-group">
+      <h3 class="potensi-group-title">A. UMKM</h3>
+      <div class="potensi-grid">
+        <!-- UMKM 1: Penjahit Cinta Fashion -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/WhatsApp Image 2026-08-25 at 16.29.41 (1).jpeg" alt="Penjahit"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12"/><path d="M18 3v12"/><path d="M6 9h12"/><path d="M4 15h16v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3Z"/></svg></span>
+          <div class="potensi-body">
+            <h3>Penjahit Cinta Fashion</h3>
+            <p>UMKM yang berfokus pada pembuatan pakaian, tas, dan lain-lain. Dengan meningkatkan kapasitas produksi, UMKM ini dapat berkembang lebih lanjut agar dapat memenuhi target penjualan.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Penjahit+Cinta+Fashion+Brongkol" target="_blank" class="potensi-map-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Buka Lokasi
+            </a>
+          </div>
+        </div>
+
+        <!-- UMKM 2: Tukang Cukur Ferry Potong Rambut -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/ptng.jpeg" alt="Tukang Cukur"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12"/><path d="M18 3v12"/><path d="M6 9h12"/><path d="M4 15h16v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3Z"/></svg></span>
+          <div class="potensi-body">
+            <h3>Tukang Cukur Ferry Potong Rambut</h3>
+            <p>UMKM yang berfokus pada bidang cukur rambut. Dapat berkembang dengan meningkatkan teknik pemotongan dan menambah alat agar lebih menarik.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tukang+Cukur+Ferry+Brongkol" target="_blank" class="potensi-map-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Buka Lokasi
+            </a>
+          </div>
+        </div>
+
+        <!-- UMKM 3: Bengkel D2 -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/IMG_6218.JPG" alt="Bengkel"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6a1.5 1.5 0 0 0 2 2l6-6a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2 2.5-2.5Z"/></svg></span>
+          <div class="potensi-body">
+            <h3>Bengkel D2</h3>
+            <p>UMKM yang berfokus pada bidang perbaikan motor dan jasa angkutan. Dapat berkembang dengan meningkatkan teknik pemasaran dan membuka usaha sparepart motor.</p>
+            <a href="https://maps.app.goo.gl/q4WJTc1mHG4KD6Ts9?g_st=iw" target="_blank" class="potensi-map-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Buka Lokasi
+            </a>
+          </div>
+        </div>
+
+        <!-- UMKM 4: Toko Issabel -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/IMG_6179.JPG" alt="Toko Issabel"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-1.5 10H5.5L4 4Z"/><path d="M8 8a4 4 0 0 0 8 0"/></svg></span>
+          <div class="potensi-body">
+            <h3>Toko Issabel</h3>
+            <p>Warung klontong yang menyediakan kebutuhan sehari-hari seperti gas, galon, makanan ringan, tempat kopi, dan lain-lain.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Toko+Issabel+Brongkol" target="_blank" class="potensi-map-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Buka Lokasi
+            </a>
+          </div>
+        </div>
+
+        <!-- UMKM 5: Toko Yoga Makmur -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/IMG_1853.JPG.jpeg" alt="Toko Yoga Makmur"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-1.5 10H5.5L4 4Z"/><path d="M8 8a4 4 0 0 0 8 0"/></svg></span>
+          <div class="potensi-body">
+            <h3>Toko Yoga Makmur</h3>
+            <p>Warung klontong yang melayani kebutuhan pokok dan barang sehari-hari warga, turut menopang perekonomian lokal.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Toko+Yoga+Makmur+Brongkol" target="_blank" class="potensi-map-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Buka Lokasi
+            </a>
+          </div>
+        </div>
+
+        <!-- UMKM 6: Angkringan Candy -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/IMG_6194.JPG" alt="Angkringan Candy"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-1.5 10H5.5L4 4Z"/><path d="M8 8a4 4 0 0 0 8 0"/></svg></span>
+          <div class="potensi-body">
+            <h3>Angkringan Candy</h3>
+            <p>Warung klontong dengan menu andalan makanan ringan dan tempat kopi, menjadi pusat nongkrong warga.</p>
+            <a href="https://maps.app.goo.gl/ZjFUkEEeg66tLGVq9?g_st=iw" target="_blank" class="potensi-map-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Buka Lokasi
+            </a>
+          </div>
+        </div>
+
+        <!-- UMKM 7: Toko D2 -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/IMG_6217.JPG" alt="Toko D2"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-1.5 10H5.5L4 4Z"/><path d="M8 8a4 4 0 0 0 8 0"/></svg></span>
+          <div class="potensi-body">
+            <h3>Toko D2</h3>
+            <p>Warung klontong yang menyediakan kebutuhan sehari-hari dan menjadi tempat berbelanja warga sekitar.</p>
+            <a href="https://maps.app.goo.gl/q4WJTc1mHG4KD6Ts9?g_st=iw" target="_blank" class="potensi-map-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 12 3a7 7 0 0 1 7 6.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Buka Lokasi
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sub-bagian B: Pertanian -->
+    <div class="potensi-group">
+      <h3 class="potensi-group-title">B. Pertanian</h3>
+      <div class="potensi-grid">
+        <!-- Pertanian 1: Padi -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/Padi.jpg" alt="Padi"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V6"/><path d="M12 6c-2 0-3.5-1.5-3.5-3.5C10.5 2.5 12 4 12 6Z"/><path d="M12 6c2 0 3.5-1.5 3.5-3.5C13.5 2.5 12 4 12 6Z"/><path d="M12 10.5c-2 0-3.5-1.5-3.5-3.5"/><path d="M12 10.5c2 0 3.5-1.5 3.5-3.5"/><path d="M12 15c-2 0-3.5-1.5-3.5-3.5"/><path d="M12 15c2 0 3.5-1.5 3.5-3.5"/></svg></span>
+          <div class="potensi-body">
+            <h3>Padi</h3>
+            <p>Komoditas utama pertanian di Brongkol, dengan irigasi tetes dan teknologi modern untuk hasil panen berlimpah.</p>
+          </div>
+        </div>
+
+        <!-- Pertanian 2: Jagung -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/Jagung.jpg" alt="Jagung"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V6"/><path d="M12 6c-2 0-3.5-1.5-3.5-3.5C10.5 2.5 12 4 12 6Z"/><path d="M12 6c2 0 3.5-1.5 3.5-3.5C13.5 2.5 12 4 12 6Z"/><path d="M12 10.5c-2 0-3.5-1.5-3.5-3.5"/><path d="M12 10.5c2 0 3.5-1.5 3.5-3.5"/><path d="M12 15c-2 0-3.5-1.5-3.5-3.5"/><path d="M12 15c2 0 3.5-1.5 3.5-3.5"/></svg></span>
+          <div class="potensi-body">
+            <h3>Jagung</h3>
+            <p>Jagung memiliki potensi besar untuk dikembangkan sebagai sumber pangan dan pakan ternak.</p>
+          </div>
+        </div>
+
+        <!-- Pertanian 3: Ubi Kayu -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/Ubi kayu.jpg" alt="Ubi Kayu"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V6"/><path d="M12 6c-2 0-3.5-1.5-3.5-3.5C10.5 2.5 12 4 12 6Z"/><path d="M12 6c2 0 3.5-1.5 3.5-3.5C13.5 2.5 12 4 12 6Z"/><path d="M12 10.5c-2 0-3.5-1.5-3.5-3.5"/><path d="M12 10.5c2 0 3.5-1.5 3.5-3.5"/><path d="M12 15c-2 0-3.5-1.5-3.5-3.5"/><path d="M12 15c2 0 3.5-1.5 3.5-3.5"/></svg></span>
+          <div class="potensi-body">
+            <h3>Ubi Kayu</h3>
+            <p>Ubi kayu menjadi bahan baku olahan khas (lempeng) dan sumber karbohidrat alternatif.</p>
+          </div>
+        </div>
+
+        <!-- Pertanian 4: Kacang -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/Kacang.jpg" alt="Kacang"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V6"/><path d="M12 6c-2 0-3.5-1.5-3.5-3.5C10.5 2.5 12 4 12 6Z"/><path d="M12 6c2 0 3.5-1.5 3.5-3.5C13.5 2.5 12 4 12 6Z"/><path d="M12 10.5c-2 0-3.5-1.5-3.5-3.5"/><path d="M12 10.5c2 0 3.5-1.5 3.5-3.5"/><path d="M12 15c-2 0-3.5-1.5-3.5-3.5"/><path d="M12 15c2 0 3.5-1.5 3.5-3.5"/></svg></span>
+          <div class="potensi-body">
+            <h3>Kacang</h3>
+            <p>Kacang-kacangan turut menjadi komoditas pertanian yang dikembangkan warga.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sub-bagian C: Peternakan -->
+    <div class="potensi-group">
+      <h3 class="potensi-group-title">C. Peternakan</h3>
+      <div class="potensi-grid">
+        <!-- Peternakan 1: Sapi -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/Sapi.jpg" alt="Sapi"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8c-1.5-1-2.5 0-2 1.5S6 11 6 11"/><path d="M17 8c1.5-1 2.5 0 2 1.5S18 11 18 11"/><path d="M6 11c0-3 2.5-5 6-5s6 2 6 5c0 4-2 7-6 7s-6-3-6-7Z"/><circle cx="9.5" cy="11" r=".6" fill="currentColor" stroke="none"/><circle cx="14.5" cy="11" r=".6" fill="currentColor" stroke="none"/><path d="M10 14.5c.7.6 1.3.6 2 0"/></svg></span>
+          <div class="potensi-body">
+            <h3>Sapi</h3>
+            <p>Sapi sebagai komoditas pedaging dan penghasil pupuk organik, dikelola dengan pemeliharaan kesehatan hewan modern.</p>
+          </div>
+        </div>
+
+        <!-- Peternakan 2: Kambing -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/Kambing.jpg" alt="Kambing"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8c-1.5-1-2.5 0-2 1.5S6 11 6 11"/><path d="M17 8c1.5-1 2.5 0 2 1.5S18 11 18 11"/><path d="M6 11c0-3 2.5-5 6-5s6 2 6 5c0 4-2 7-6 7s-6-3-6-7Z"/><circle cx="9.5" cy="11" r=".6" fill="currentColor" stroke="none"/><circle cx="14.5" cy="11" r=".6" fill="currentColor" stroke="none"/><path d="M10 14.5c.7.6 1.3.6 2 0"/></svg></span>
+          <div class="potensi-body">
+            <h3>Kambing</h3>
+            <p>Kambing dipelihara untuk konsumsi dan dapat dikembangkan dengan manajemen pakan yang baik.</p>
+          </div>
+        </div>
+
+        <!-- Peternakan 3: Ayam Kampung -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/Ayam.jpg" alt="Ayam Kampung"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8c-1.5-1-2.5 0-2 1.5S6 11 6 11"/><path d="M17 8c1.5-1 2.5 0 2 1.5S18 11 18 11"/><path d="M6 11c0-3 2.5-5 6-5s6 2 6 5c0 4-2 7-6 7s-6-3-6-7Z"/><circle cx="9.5" cy="11" r=".6" fill="currentColor" stroke="none"/><circle cx="14.5" cy="11" r=".6" fill="currentColor" stroke="none"/><path d="M10 14.5c.7.6 1.3.6 2 0"/></svg></span>
+          <div class="potensi-body">
+            <h3>Ayam Kampung</h3>
+            <p>Ayam kampung menghasilkan telur berkualitas dan daging yang diminati pasar lokal.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sub-bagian D: Kearifan Lokal -->
+    <div class="potensi-group">
+      <h3 class="potensi-group-title">D. Kearifan Lokal</h3>
+      <div class="potensi-grid">
+        <!-- Kearifan 1: Biogas & Pupuk Organik -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/IMG_6215.JPG" alt="Biogas"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4C10 4 4 10 4 20c10 0 16-6 16-16Z"/><path d="M9 19c4-4 7-7 11-11"/></svg></span>
+          <div class="potensi-body">
+            <h3>Biogas &amp; Pupuk Organik</h3>
+            <p>Pemanfaatan limbah ternak menjadi biogas dan pupuk organik untuk pertanian berkelanjutan.</p>
+          </div>
+        </div>
+
+        <!-- Kearifan 2: Tradisi -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/Screenshot 2026-08-27 171330.png" alt="Tradisi"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.3-9.5-9C1 9 2 5.5 5.5 4.5 8 3.8 10 5 12 7c2-2 4-3.2 6.5-2.5C22 5.5 23 9 21.5 12 19 16.7 12 21 12 21Z"/></svg></span>
+          <div class="potensi-body">
+            <h3>Tradisi Sedekah Bumi &amp; Bersih Dusun</h3>
+            <p>Pelestarian tradisi sebagai identitas spiritual dan sosial warga.</p>
+          </div>
+        </div>
+
+        <!-- Kearifan 3: Lempeng -->
+        <div class="potensi-card">
+          <div class="potensi-photo"><img src="img/IMG_6216.JPG" alt="Lempeng"></div>
+          <span class="potensi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18"/><path d="M4 8v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M8 12h8"/><path d="M9 16h6"/></svg></span>
+          <div class="potensi-body">
+            <h3>Lempeng</h3>
+            <p>Lempeng dari ubi kayu adalah makanan tradisional Indonesia yang terbuat dari parutan ubi kayu yang dicampur dengan gula, garam, dan kelapa parut. Adonan kemudian dibentuk menjadi lembaran tipis atau bulat, lalu dipanggang atau digoreng hingga matang dan renyah.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FASILITAS ============ -->
+<section class="section section-pastel" id="fasilitas">
+  <div class="container">
+    <div class="section-eyebrow center">✦ FASILITAS & INFRASTRUKTUR</div>
+    <h2 class="section-title center">Sarana dan Prasarana Padukuhan</h2>
+    <div class="fasilitas-grid">
+      <div class="fasilitas-card"><span class="fasilitas-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3.5a2.5 2.5 0 0 0 5 0"/><path d="M4 21V13c0-3 2-5 3.5-6.2C9 5.7 10.5 8 8.5 9.5 7 10.7 6 12 6 13.5V21"/><path d="M20 21V13c0-3-2-5-3.5-6.2C15 5.7 13.5 8 15.5 9.5c1.5 1.2 2.5 2.5 2.5 4V21"/><path d="M9 21v-4a3 3 0 0 1 6 0v4"/><path d="M2 21h20"/></svg></span><span class="fasilitas-name">Masjid (Nurul Iman)</span></div>
+      <div class="fasilitas-card"><span class="fasilitas-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.3-9.5-9C1 9 2 5.5 5.5 4.5 8 3.8 10 5 12 7c2-2 4-3.2 6.5-2.5C22 5.5 23 9 21.5 12 19 16.7 12 21 12 21Z"/><path d="M6 12h3l1.5-3L12 15l1.5-3H18"/></svg></span><span class="fasilitas-name">Posyandu Balita & Lansia</span></div>
+      <div class="fasilitas-card"><span class="fasilitas-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><rect x="5" y="7" width="14" height="14" rx="3"/><path d="M9 12h6"/><path d="M9 21v-4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4"/></svg></span><span class="fasilitas-name">TK, PAUD, SD, dan TPA</span></div>
+      <div class="fasilitas-card"><span class="fasilitas-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h2"/><path d="M8 20V14"/><path d="M13 20V9"/><path d="M18 20V5"/></svg></span><span class="fasilitas-name">Jaringan Telkomsel</span></div>
+      <div class="fasilitas-card" data-status="warn"><span class="fasilitas-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2.3h6c0-1.1.4-1.8 1-2.3A7 7 0 0 0 12 2Z"/></svg></span><span class="fasilitas-name">Lampu Jalan<small class="fasilitas-status">Kurang Memadai</small></span></div>
+      <div class="fasilitas-card"><span class="fasilitas-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5c5.5-5 14.5-5 20 0"/><path d="M5 12.5c3.9-3.5 10.1-3.5 14 0"/><path d="M8.5 16.5c2.2-1.8 4.8-1.8 7 0"/><circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/></svg></span><span class="fasilitas-name">Wifi Desa di Poskamling RT 1</span></div>
+    </div>
+
+    <!-- Balai Padukuhan Brongkol -->
+    <div class="balai-card">
+      <div class="balai-photo"><img src="img/IMG_6190.JPG" alt="Balai Padukuhan Brongkol"></div>
+      <div class="balai-info">
+        <h3>Balai Padukuhan Brongkol</h3>
+        <p>Balai Padukuhan Brongkol merupakan pusat kegiatan warga, tempat pertemuan, rapat, dan berbagai acara kemasyarakatan di Padukuhan Brongkol.</p>
+        <a href="https://maps.app.goo.gl/WHgTK4MxomZfoReJ6?g_st=iw" target="_blank" class="btn btn-outline">
+          Buka Lokasi Balai
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none"><path d="M7 17L17 7M17 7H9m8 0v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SENI & BUDAYA ============ -->
+<section class="section section-cream" id="seni-budaya">
+  <div class="container">
+    <div class="section-eyebrow">✦ SENI &amp; BUDAYA</div>
+    <h2 class="section-title">Seni dan Tradisi Khas Brongkol</h2>
+    <div class="seni-list">
+      <div class="seni-card"><div class="seni-photo"><img src="img/denian_Reog-Dhodhog.png" alt="Reog Dhadhog Setyo Budoyo"></div><div class="seni-body"><h3>Reog Dhadhog Setyo Budoyo</h3><p>Kesenian Reog Dhadhog yang dilestarikan melalui Sanggar Setyo Budoyo. Di bawah arahan Bapak Endro Cahyono dan Bapak Tris Tugiyo, kesenian ini rutin dipentaskan untuk berbagai acara adat dan hajatan warga.</p></div></div>
+      <div class="seni-card"><div class="seni-photo"><img src="img/IMG_5905.JPG" alt="Karawitan"></div><div class="seni-body"><h3>Karawitan Tradisional</h3><p>Kesenian gamelan dan karawitan yang menjadi bagian dari acara sakral dan selamatan di Padukuhan Brongkol, diwariskan turun temurun oleh para sesepuh desa.</p></div></div>
+      <div class="seni-card"><div class="seni-photo"><img src="img/Kesenian_Ketoprak_Jawa.jpg" alt="Kethoprak Cundhuk Setyo Budoyo"></div><div class="seni-body"><h3>Kethoprak Cundhuk</h3><p>Kethoprak yang tidak hanya menghibur tetapi juga menjadi media edukasi sejarah dan budaya. Sanggar Cundhuk Setyo Budoyo menjadi garda terdepan dalam pelestarian seni pentas rakyat ini.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BATAS GEOGRAFIS ============ -->
+<section class="section section-pastel" id="batas-geografis">
+  <div class="container">
+    <div class="section-eyebrow">✦ BATAS GEOGRAFIS</div>
+    <h2 class="section-title">Batas Wilayah Padukuhan Brongkol</h2>
+
+    <div class="batas-grid">
+      <!-- Batas Utara -->
+      <div class="batas-card">
+        <span class="batas-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </span>
+        <div class="batas-body">
+          <h3>Batas Utara</h3>
+          <p>Desa Giripanggung</p>
+        </div>
+      </div>
+      <!-- Batas Selatan -->
+      <div class="batas-card">
+        <span class="batas-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </span>
+        <div class="batas-body">
+          <h3>Batas Selatan</h3>
+          <p>Padukuhan Kotean</p>
+        </div>
+      </div>
+      <!-- Batas Timur -->
+      <div class="batas-card">
+        <span class="batas-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+        <div class="batas-body">
+          <h3>Batas Timur</h3>
+          <p>Padukuhan Gerotan</p>
+        </div>
+      </div>
+      <!-- Batas Barat -->
+      <div class="batas-card">
+        <span class="batas-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </span>
+        <div class="batas-body">
+          <h3>Batas Barat</h3>
+          <p>Padukuhan Kenis</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HUBUNGI KAMI (DIPERBARUI) ============ -->
+<section class="section section-cream" id="hubungi-kami">
+  <div class="container">
+    <div class="section-eyebrow">✦ HUBUNGI KAMI</div>
+    <h2 class="section-title">Hubungi Kami</h2>
+    <div class="kontak-grid">
+      <div class="kontak-info">
+        <div class="kontak-item">
+          <span class="kontak-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M12 21s-7-6.2-7-11.2A7 7 0 0112 3a7 7 0 017 6.8C19 14.8 12 21 12 21z" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <div>
+            <span class="kontak-label">Alamat</span>
+            <span class="kontak-value">Padukuhan Brongkol, Kalurahan Purwodadi,<br>Kapanewon Tepus, Kabupaten Gunungkidul, DIY</span>
+          </div>
+        </div>
+
+        <div class="kontak-item">
+          <span class="kontak-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path d="M3 5.5A1.5 1.5 0 014.5 4h2.6a1 1 0 011 .8l.9 3.6a1 1 0 01-.4 1.1L7 10.7a12 12 0 006.3 6.3l1.2-1.6a1 1 0 011.1-.4l3.6.9a1 1 0 01.8 1v2.6a1.5 1.5 0 01-1.5 1.5C10.6 21 3 13.4 3 5.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <div>
+            <span class="kontak-label">Telepon / WhatsApp</span>
+            <span class="kontak-value"><a href="https://wa.me/6282288795161" target="_blank" rel="noopener">+62 822-8879-5161</a></span>
+          </div>
+        </div>
+
+        <div class="kontak-item">
+          <span class="kontak-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M3 6.5l9 6.5 9-6.5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <div>
+            <span class="kontak-label">Email</span>
+            <span class="kontak-value"><a href="mailto:brongkolpadukuhan@gmail.com">brongkolpadukuhan@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kontak-map">
+        <span class="map-eyebrow">✦ LOKASI</span>
+        <h3>Padukuhan Brongkol</h3>
+        <p>Purwodadi, Tepus, Gunungkidul, D.I. Yogyakarta</p>
+        <a href="https://maps.app.goo.gl/1WjQXpiN2nPqEJSt6" target="_blank" rel="noopener" class="btn">
+          Buka Google Maps
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none">
+            <path d="M7 17L17 7M17 7H9m8 0v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <span class="brand-logo footer-logo">
+        <img src="img/GunungKidul.png" alt="Lambang Kabupaten Gunungkidul" class="brand-logo-img">
+      </span>
+      <div>
+        <span class="footer-brand-name">Padukuhan Brongkol</span>
+        <span class="footer-brand-addr">Purwodadi, Tepus, Gunungkidul, DIY</span>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5A1.5 1.5 0 014.5 4h2.6a1 1 0 011 .8l.9 3.6a1 1 0 01-.4 1.1L7 10.7a12 12 0 006.3 6.3l1.2-1.6a1 1 0 011.1-.4l3.6.9a1 1 0 01.8 1v2.6a1.5 1.5 0 01-1.5 1.5C10.6 21 3 13.4 3 5.5z"/></svg>
+        <a href="https://wa.me/6282288795161" target="_blank" rel="noopener">+62 822-8879-5161</a>
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 6.5l9 6.5 9-6.5"/></svg>
+        <a href="mailto:brongkolpadukuhan@gmail.com">brongkolpadukuhan@gmail.com</a>
+      </span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Padukuhan Brongkol. Seluruh hak cipta dilindungi.</p>
+    <p>Didesain berdasarkan Dokumen Profil Padukuhan Brongkol.</p>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP BUTTON ============ -->
+<button id="backToTop" aria-label="Kembali ke atas" class="back-to-top">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 19V5m0 0l-6 6m6-6l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="brongkol.js"></script>
+</body>
+</html>

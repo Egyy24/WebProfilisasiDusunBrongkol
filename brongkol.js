@@ -19,31 +19,40 @@ document.addEventListener('DOMContentLoaded', () => {
   updateHeaderState();
   window.addEventListener('scroll', updateHeaderState, { passive: true });
 
-  /* ---------- hamburger menu (mobile) ---------- */
+  /* ---------- menu hamburger (HP & tablet) ---------- */
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const mobileNav = document.getElementById('mobileNav');
 
   function closeMobileNav() {
+    if (!hamburgerBtn || !mobileNav) return;
     hamburgerBtn.classList.remove('open');
     mobileNav.classList.remove('open');
     hamburgerBtn.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   }
 
-  hamburgerBtn.addEventListener('click', () => {
-    const isOpen = mobileNav.classList.toggle('open');
-    hamburgerBtn.classList.toggle('open', isOpen);
-    hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-  });
+  if (hamburgerBtn && mobileNav) {
+    hamburgerBtn.addEventListener('click', () => {
+      const willOpen = !mobileNav.classList.contains('open');
+      hamburgerBtn.classList.toggle('open', willOpen);
+      mobileNav.classList.toggle('open', willOpen);
+      hamburgerBtn.setAttribute('aria-expanded', String(willOpen));
+      document.body.style.overflow = willOpen ? 'hidden' : '';
+    });
 
-  document.querySelectorAll('[data-nav-mobile]').forEach(link => {
-    link.addEventListener('click', closeMobileNav);
-  });
+    mobileNav.querySelectorAll('[data-nav-mobile]').forEach(link => {
+      link.addEventListener('click', closeMobileNav);
+    });
+
+    // tutup otomatis jika layar diputar/diperbesar ke ukuran desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 960) closeMobileNav();
+    });
+  }
 
   /* ---------- scrollspy ---------- */
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('[data-nav]');
+  const navLinks = document.querySelectorAll('[data-nav], [data-nav-mobile]');
 
   const spyObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
